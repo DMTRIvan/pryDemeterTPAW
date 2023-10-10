@@ -23,13 +23,27 @@ html,
 body{
     height: 100%;
 }
-
+a{
+    margin: 0 0 0 15px;
+}
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
 /*movil*/
 body{
     display: flex;
     flex-direction: column;
     background-color: rgb(221, 250, 237);
 }
+main{
+    flex-grow: 1;
+    
+}
+
 .padding-bloques{
     padding-inline: 10px;
 }
@@ -41,14 +55,15 @@ body{
 }
 
 
-/*Aca empiezan las partes que se repiten*/
+/*Aca empiezan las partes que se repiten------------------*/
 
-.header {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-block: 15px;
-    /*background-color: #cfffdc;*/
+    /*background-color: red;*/
+    
 
 }
 .nav-principal{
@@ -57,23 +72,20 @@ body{
 }
 
 /*Bloque main*/
-.main{
-    flex-grow: 1;
-}
 
 /*Footer*/
-.footer{
+footer{
     display: flex;
-    justify-content: center;
 }
+
 /*Pagina contacto*/
-.form{
+form{
     display: flex;
     flex-direction: column;
     padding-inline: 20%;
     margin-block-end: 40px;
 }
-.form label, .textarea{
+form label, .textarea{
     font-size: inherit;
     font-family: inherit;
     padding-block: 10px;
@@ -81,7 +93,7 @@ body{
     margin-block-end: 10px;
 }
 
-.form button{
+form button{
     font-size: inherit;
     color: black;
     background-color: rgb(116, 226, 116);
@@ -90,11 +102,33 @@ body{
     border-radius: 6px;
     border: none;
 }
-/*Catalogo*/
-.item{
+/*Catalogo----------------------*/
+
+.row{
     display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding-left: 10%;
 }
 
+.tarjeta_producto{
+    padding: 15px;
+    width: 17%;
+    box-shadow: 0 0 7px #9999;
+    margin: 20px 20px 0 10px;
 
+}
+.item{
+    max-width: 100%;
+    text-align: center;
+}
+.imagen_principal_productos{
+    width: 100%;
+}
+.imagen_principal_productos .producto_imagen{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 
 /*Pagina index*/
