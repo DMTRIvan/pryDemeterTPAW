@@ -28,6 +28,7 @@ body{
 body{
     display: flex;
     flex-direction: column;
+    background-color: rgb(221, 250, 237);
 }
 .padding-bloques{
     padding-inline: 10px;
@@ -41,3 +42,59 @@ body{
 
 
 /*Aca empiezan las partes que se repiten*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 15px;
+    /*background-color: #cfffdc;*/
+
+}
+.nav-principal{
+    display: flex;
+    align-items: center;
+}
+
+/*Bloque main*/
+.main{
+    flex-grow: 1;
+}
+
+/*Footer*/
+.footer{
+    display: flex;
+    justify-content: center;
+}
+/*Pagina contacto*/
+.form{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 20%;
+    margin-block-end: 40px;
+}
+.form label, .textarea{
+    font-size: inherit;
+    font-family: inherit;
+    padding-block: 10px;
+    padding-inline: 5px;
+    margin-block-end: 10px;
+}
+
+.form button{
+    font-size: inherit;
+    color: black;
+    background-color: rgb(116, 226, 116);
+    padding-block: 20px;
+    margin-block-start: 15px;
+    border-radius: 6px;
+    border: none;
+}
+/*Catalogo*/
+.item{
+    display: flex;
+}
+
+
+
+/*Pagina index*/

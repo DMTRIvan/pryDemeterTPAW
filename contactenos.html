@@ -11,7 +11,7 @@
         <h1>
             Comprá libros usados!!
         </h1>
-        <nav>
+        <nav class="nav-principal">
             <a href="index.html">Inicio</a> <a href="CatalogoDeLibros.html">Catalogo de nuestros libros</a> 
             <a href="contactenos.html">Contactenos</a>
         </nav>
@@ -23,19 +23,20 @@
             el modo de entrega. Las entregas suelen ser por Andriani o Correo Argentino. 
             (Por ahora solo hacemos envios en Argentina)
         </p>
-        <form action="">
+        <form class="form" action="./contactenos.html" method="post">
             
-            <label for="nombre"> Nombre </label>
+            <label for="nombre"> Nombre: </label>
             <input type="text" name="nombre" id="nombre" required placeholder = "Ej: Juan Perez"/>
-            <label for="Libro"> Libros de su interes </label>
+            <label for="Libro"> Libros de su interes: </label>
                 <textarea
                     name="comentario"
                     id="comentario"
                     cols="30"
                     rows="10"
                 ></textarea>
-            <label for="telefono"> Telefono </label>
+            <label for="telefono"> Telefono: </label>
             <input type="number" name="Telefono" id="telefono" required placeholder = "Ej: XXX-XXXXXX"/>
+            <button type="submit">Enviar consulta</button>
         </form> 
 
     </main>
