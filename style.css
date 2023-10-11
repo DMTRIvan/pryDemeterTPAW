@@ -23,6 +23,10 @@ html,
 body{
     height: 100%;
 }
+/*
+* {
+    outline: 1px solid red;
+}*/
 a{
     margin: 0 0 0 15px;
 }
@@ -76,6 +80,10 @@ header {
 /*Footer*/
 footer{
     display: flex;
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+    padding: 10px;
 }
 
 /*Pagina contacto*/
@@ -102,8 +110,17 @@ form button{
     border-radius: 6px;
     border: none;
 }
-/*Catalogo----------------------*/
 
+.h2_main_contactenos{
+    margin-block: 15px 25px;
+    padding-inline: 6%;
+}
+.p_main_contactenos{
+    text-align: justify;
+    margin-block: 15px 25px;
+    padding-inline: 10%;
+}
+/*Catalogo----------------------*/
 .row{
     display: flex;
     flex-wrap: wrap;
@@ -130,5 +147,19 @@ form button{
     object-fit: cover;
     object-position: center;
 }
-
+.a_PDF{
+    text-transform: uppercase;
+    color: green;
+    font-size: 15px;
+    /*text-decoration: none;*/
+}
 /*Pagina index*/
+
+.main_parrafo_index{
+    text-align: center;
+    margin-block: 15px 25px;
+    padding-inline: 10%;
+}
+.h2_main_index{
+    text-align: center;
+}
