@@ -45,17 +45,46 @@ body{
 }
 main{
     flex-grow: 1;
-    
+    flex-wrap: wrap;
+    gap: 10px;
+    padding:10px;
 }
 
+main > article {
+    padding:10px;
+    width: 100%;
+}
+
+/* No lo estoy usando (?
 .padding-bloques{
     padding-inline: 10px;
 }
-/*escritorio*/
-@media(min-width: 960px) {
-    .padding-bloques{
-        padding-inline: 10%;
+*/
+
+@media (min-width: 480px) {
+    
+    main > article {
+        width: calc(50% - 5px);
     }
+    /*.padding-bloques{
+        padding-inline: 10%;
+    }*/
+}
+@media (min-width: 768px) {
+    main > article {
+        width: calc(33.33% - 7px);
+    }
+}
+
+/*escritorio*/
+
+@media(min-width: 960px) {
+    main > article {
+        width: calc(25% - 8px);
+    }
+    /*.padding-bloques{
+        padding-inline: 10%;
+    }*/
 }
 
 
@@ -86,14 +115,14 @@ footer{
     padding: 10px;
 }
 
-/*Pagina contacto*/
+/*Pagina contacto----------------------------------------------------------------*/
 form{
     display: flex;
     flex-direction: column;
     padding-inline: 20%;
     margin-block-end: 40px;
 }
-form label, .textarea{
+form label, textarea{
     font-size: inherit;
     font-family: inherit;
     padding-block: 10px;
@@ -120,22 +149,22 @@ form button{
     margin-block: 15px 25px;
     padding-inline: 10%;
 }
-/*Catalogo----------------------*/
-.row{
+/*Catalogo---------------------------------------------------------------------------*/
+.row_Catalogo{
     display: flex;
     flex-wrap: wrap;
     max-width: 100%;
     padding-left: 10%;
 }
 
-.tarjeta_producto{
+.tarjeta_producto_catalogo{
     padding: 15px;
     width: 17%;
     box-shadow: 0 0 7px #9999;
     margin: 20px 20px 0 10px;
 
 }
-.item{
+.item_catalogo{
     max-width: 100%;
     text-align: center;
 }
@@ -147,13 +176,13 @@ form button{
     object-fit: cover;
     object-position: center;
 }
-.a_PDF{
+.a_PDF_Catalogo{
     text-transform: uppercase;
     color: green;
     font-size: 15px;
     /*text-decoration: none;*/
 }
-/*Pagina index*/
+/*Pagina index------------------------------------------------------------------------*/
 
 .main_parrafo_index{
     text-align: center;
