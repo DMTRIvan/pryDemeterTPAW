@@ -5,7 +5,8 @@ console.log(productos)
 // Identificamos el contenedor
 const app = document.getElementById("app");
 
-let renderizadoHTML = `<ul class = "productos">`
+let renderizadoHTML = ``;
+//<ul class = "productos"> esto va en las comillas que estan arriba
 
 productos.libros.forEach(
     (numero)=>{
@@ -24,6 +25,6 @@ productos.libros.forEach(
 
 )
 
-renderizadoHTML += `</ul>`
+//renderizadoHTML += `</ul>`
 
 app.innerHTML = renderizadoHTML
