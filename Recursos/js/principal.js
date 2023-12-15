@@ -6,7 +6,6 @@ console.log(productos)
 const app = document.getElementById("app");
 
 let renderizadoHTML = ``;
-//<ul class = "productos"> esto va en las comillas que estan arriba
 
 productos.libros.forEach(
     (numero)=>{
@@ -25,6 +24,5 @@ productos.libros.forEach(
 
 )
 
-//renderizadoHTML += `</ul>`
 
 app.innerHTML = renderizadoHTML
